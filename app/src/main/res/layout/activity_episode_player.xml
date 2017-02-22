@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mokithedestroyer.greynoise.EpisodePlayer">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/episodeTitle"
+        android:textSize="26sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Episodes"
+        android:id="@+id/backButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Episode"
+        android:id="@+id/episodeNum"
+        android:textSize="20sp"
+        android:layout_above="@+id/episodeTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop / Play"
+        android:id="@+id/stopPLayButton"
+        android:layout_below="@+id/episodeTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"/>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/episodeLengthDisplay"
+        android:text="Episode Length"
+        android:textSize="24sp"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/episodeTotalLengthDisplay"
+        android:text="Episode Length"
+        android:textSize="24sp"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
